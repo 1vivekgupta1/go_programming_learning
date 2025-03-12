@@ -1,11 +1,11 @@
 package main
 
 import "fmt"
-
+// --------arguments--------------returns-------
 func adder(valOne int, valTwo int) int{
 	return valOne + valTwo
 }
-
+// Again Everything is passed by value except arrays , slices , maps and channels
 func proAdder(values ...int)(int,string){
 	total := 0
 	for _, val := range values{
